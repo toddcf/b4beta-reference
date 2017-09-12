@@ -82,47 +82,71 @@
         <!--########################START HERE#########################-->
 
         <!-- LIST GROUP -->
-        <ul>
-            <li>My List Item One</li>
-            <li>My List Item Two</li>
-            <li>My List Item Three</li>
-            <li>My List Item Four</li>
-            <li>My List Item Five</li>
+        <ul class="list-group mb-5">
+            <li class="list-group-item">My List Item One</li>
+            <li class="list-group-item">My List Item Two</li>
+            <li class="list-group-item">My List Item Three</li>
+            <li class="list-group-item">My List Item Four</li>
+            <li class="list-group-item">My List Item Five</li>
         </ul>
 
         <!-- LIST GROUP WITH LINKS -->
-        <ul>
-            <a href="#">My List Item One</a>
-            <a href="#">My List Item Two</a>
-            <a href="#">My List Item Three</a>
-            <a href="#">My List Item Four</a>
-            <a href="#">My List Item Five</a>
+        <ul class="list-group mb-5">
+            <a href="#" class="list-group-item list-group-item-action">My List Item One</a> <!-- list-group-item-action gives a hover effect. -->
+            <a href="#" class="list-group-item list-group-item-action">My List Item Two</a>
+            <a href="#" class="list-group-item list-group-item-action">My List Item Three</a>
+            <a href="#" class="list-group-item list-group-item-action">My List Item Four</a>
+            <a href="#" class="list-group-item list-group-item-action">My List Item Five</a>
         </ul>
 
 
         <!-- CONTEXTUAL CLASSES -->
-        <ul>
-            <li>Regular List Item</li>
-            <li>Primary List Item</li>
-            <li>Secondary List Item</li>
-            <li>Success List Item</li>
-            <li>Info List Item</li>
-            <li>Warning List Item</li>
-            <li>Danger List Item</li>
-            <li>Light List Item</li>
-            <li>Dark List Item</li>
+        <ul class="list-group mb-5">
+            <li class="list-group-item">Regular List Item</li>
+            <li class="list-group-item list-group-item-primary">Primary List Item</li>
+            <li class="list-group-item list-group-item-secondary">Secondary List Item</li>
+            <li class="list-group-item list-group-item-success">Success List Item</li>
+            <li class="list-group-item list-group-item-info">Info List Item</li>
+            <li class="list-group-item list-group-item-warning">Warning List Item</li>
+            <li class="list-group-item list-group-item-danger">Danger List Item</li>
+            <li class="list-group-item list-group-item-light">Light List Item</li>
+            <li class="list-group-item list-group-item-dark">Dark List Item</li>
         </ul>
 
 
         <!-- JAVASCRIPT BEHAVIOR -->
+        <!-- NOTE: THIS IS REALLY SLICK -->
         <div class="row mb-5">
           <div class="col-4">
-
+            <div class="list-group mb-5" id="list-tab" role="tablist"> <!-- In this case, this does NOT have to be a UL. -->
+                <a href="#list-home" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list">Home</a> <!-- list-group-item-action gives a hover effect. -->
+                <a href="#list-about" class="list-group-item list-group-item-action" id="list-about-list" data-toggle="list">About</a>
+                <a href="#list-services" class="list-group-item list-group-item-action" id="list-services-list" data-toggle="list">Services</a>
+            </div>
           </div>
           <div class="col-8">
-
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="list-home" role="tabpanel"> <!-- Set this id to be what the links in the above code are pointing to. -->
+                Home Content . . .
+              </div>
+              <div class="tab-pane fade" id="list-about" role="tabpanel"> <!-- Set this id to be what the links in the above code are pointing to. -->
+                About Content . . .
+              </div>
+              <div class="tab-pane fade" id="list-services" role="tabpanel"> <!-- Set this id to be what the links in the above code are pointing to. -->
+                Services Content . . .
+              </div>
+            </div>
           </div>
         </div>
+
+        <!-- BADGES -->
+        <ul class="list-group mb-5">
+            <li class="list-group-item">My List Item One</li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">My List Item Two <span class="badge badge-primary">30</span></li>
+            <li class="list-group-item">My List Item Three</li>
+            <li class="list-group-item">My List Item Four</li>
+            <li class="list-group-item">My List Item Five</li>
+        </ul>
 
         <!-- BREADCRUMB -->
         <ol>
