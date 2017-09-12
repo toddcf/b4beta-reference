@@ -81,28 +81,53 @@
     <!--########################START HERE#########################-->
 
     <!-- SIMPLE NAVBAR -->
-    <nav>
-        <div>
-          <a href="#">Navbar</a>
-              <ul>
-                  <li>
-                      <a href="#">Home</a>
+    <!-- navbar-expand is where you tell it at which breakpoint you want it to go into responsive mode. SM is common. -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light mb-3">
+        <div class="container"> <!-- The container goes INSIDE the nav tag instead of outside, so that the navbar takes up the whole width, but the text inside is only 80% wide. -->
+          <a href="#" class="navbar-brand">Navbar</a>
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">Home</a>
                   </li>
-                  <li>
-                      <a href="#">About</a>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">About</a>
                   </li>
-                  <li>
-                      <a href="#">Services</a>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">Services</a>
                   </li>
-                  <li>
-                      <a href="#">Contact</a>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">Contact</a>
                   </li>
               </ul>
           </div>
     </nav>
 
     <!-- NAVBAR WITH RESPONSIVE TOGGLE -->
-
+    <!-- navbar-expand is where you tell it at which breakpoint you want it to go into responsive mode. SM is common. -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light mb-3">
+        <div class="container"> <!-- The container goes INSIDE the nav tag instead of outside, so that the navbar takes up the whole width, but the text inside is only 80% wide. -->
+          <a href="#" class="navbar-brand">Navbar</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav"> <!-- Wrap the UL in a div. The ID will match whatever we put in the data-target above. -->
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">Services</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">Contact</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+    </nav>
 
     <!-- NAVBAR WITH FORM -->
 
