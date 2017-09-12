@@ -274,7 +274,7 @@
     <div class="container">
 
         <!-- NAVS -->
-        <ul class="nav nav-pills"> <!-- Adding the class of nav automatically makes everything inline. -->
+        <ul class="nav nav-pills my-3"> <!-- Adding the class of nav automatically makes everything inline. -->
             <li class="nav-item">
                 <a href="#" class="nav-link active">Link 1</a> <!-- Giving a link a class of active highlights it, but only with the ul having a class of nav-pills. -->
             </li>
@@ -291,19 +291,92 @@
 
 
         <!-- HORIZONTAL ALIGN -->
-
+        <ul class="nav nav-pills my-3 justify-content-center"> <!-- Adding the class of justify-content-center centers the nav. -->
+            <li class="nav-item">
+                <a href="#" class="nav-link active">Link 1</a> <!-- Giving a link a class of active highlights it, but only with the ul having a class of nav-pills. -->
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Link 2</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Link 3</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Link 4</a>
+            </li>
+        </ul>
 
         <!-- RIGHT ALIGN -->
-
+        <ul class="nav nav-pills my-3 justify-content-end"> <!-- Adding the class of justify-content-end aligns the nav to the right. -->
+            <li class="nav-item">
+                <a href="#" class="nav-link active">Link 1</a> <!-- Giving a link a class of active highlights it, but only with the ul having a class of nav-pills. -->
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Link 2</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Link 3</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Link 4</a>
+            </li>
+        </ul>
 
         <!-- VERTICAL -->
-
+        <ul class="nav nav-pills my-3 flex-column"> <!-- Adding the class of flex-column makes the nav vertical. -->
+            <li class="nav-item">
+                <a href="#" class="nav-link active">Link 1</a> <!-- Giving a link a class of active highlights it, but only with the ul having a class of nav-pills. -->
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Link 2</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Link 3</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Link 4</a>
+            </li>
+        </ul>
 
         <!-- FILL & JUSTIFY -->
-
+        <ul class="nav nav-pills nav-fill my-3"> <!-- Adding the class of nav-fill fills the entire width with even spacing. -->
+            <li class="nav-item">
+                <a href="#" class="nav-link active">Link 1</a> <!-- Giving a link a class of active highlights it, but only with the ul having a class of nav-pills. -->
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Link 2</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Link 3</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Link 4</a>
+            </li>
+        </ul>
 
         <!-- WITH DROPDOWNS -->
-
+        <ul class="nav nav-pills nav-fill my-3">
+            <li class="nav-item">
+                <a href="#" class="nav-link active">Link 1</a> <!-- Giving a link a class of active highlights it, but only with the ul having a class of nav-pills. -->
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Link 2</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a> <!-- The class of dropdown-toggle also needs the attribute of data-toggle="dropdown". -->
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Link</a>
+                <a href="#" class="dropdown-item">Link</a>
+                <a href="#" class="dropdown-item">Link</a>
+              </div>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Link 3</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Link 4</a>
+            </li>
+        </ul>
 
     </div><!-- ./container -->
     <div style="margin-top:500px;"></div>
