@@ -130,6 +130,35 @@
     </nav>
 
     <!-- NAVBAR WITH FORM -->
+    <!-- navbar-expand is where you tell it at which breakpoint you want it to go into responsive mode. SM is common. -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light mb-3">
+        <div class="container"> <!-- The container goes INSIDE the nav tag instead of outside, so that the navbar takes up the whole width, but the text inside is only 80% wide. -->
+          <a href="#" class="navbar-brand">Navbar</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav"> <!-- Wrap the UL in a div. The ID will match whatever we put in the data-target above. -->
+              <ul class="navbar-nav mr-auto"> <!-- mr-auto pushes the form over to the right. -->
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">Services</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">Contact</a>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0"> <!-- my-lg-0 makes it 0 on large breakpoint screens and up. -->
+                <input type="text" class="form-control mr-sm-2" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0">Search</button>
+              </form>
+            </div>
+          </div>
+    </nav>
 
 
     <!-- NAVBAR WITH DROPDOWN -->
