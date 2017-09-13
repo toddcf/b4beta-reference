@@ -147,16 +147,16 @@
         <br><br>
 
         <!-- INLINE FORM -->
-        <form>
-            <input type="text" id="username" placeholder="Enter username">
-            <input type="text" id="password" placeholder="Password">
-            <div>
-                <label>
-                    <input type="checkbox"> Remember me
+        <form class="form-inline"> <!-- Add class form-inline. -->
+            <input type="text" id="username" placeholder="Enter username" class="form-control mr-2">
+            <input type="text" id="password" placeholder="Password" class="form-control mr-2">
+            <div class="form-check">
+                <label class="form-check-label mr-2">
+                    <input type="checkbox" class="form-check-input"> Remember me
                 </label>
             </div>
 
-            <button type="submit">Submit</button>
+            <button type="submit" class="btn btn-secondary">Submit</button>
         </form>
 
         <br><br>
