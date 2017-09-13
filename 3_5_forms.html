@@ -89,7 +89,7 @@
             </div>
             <div class="form-group">
                 <label for="email">Email address</label>
-                <input type="email" id="email" placeholder="Enter email" class="form-control form-control-lg">
+                <input type="email" id="email" placeholder="Enter email" class="form-control form-control-lg"> <!-- form-control-lg makes it bigger. -->
                 <small class="form-text text-muted">Your email will not be shared with anyone</small>
             </div>
             <div class="form-group">
@@ -116,32 +116,32 @@
             <!-- FORM CHECK -->
             <fieldset class="form-group">
                 <legend>What are you using this service for?</legend>
-                <div>
-                  <label>
-                      <input type="radio" value="option1" checked>
+                <div class="form-check"> <!-- form-check gives it some alignment and minor styling. -->
+                  <label class="form-check-label"> <!-- form-check-label gives it some alignment and minor styling. -->
+                      <input type="radio" value="option1" checked class="form-check-input"> <!-- form-check-input gives it some alignment and minor styling. -->
                       Personal
                   </label>
                 </div>
-                <div>
-                  <label>
-                      <input type="radio" value="option1" checked>
+                <div class="form-check">
+                  <label class="form-check-label">
+                      <input type="radio" value="option1" checked class="form-check-input">
                       Commercial Use
                   </label>
                 </div>
-                <div>
-                  <label>
-                      <input type="radio" value="option1"checked>
+                <div class="form-check">
+                  <label class="form-check-label">
+                      <input type="radio" value="option1" checked class="form-check-input">
                       Testing
                   </label>
                 </div>
             </fieldset>
-            <div>
-                <label>
-                <input type="checkbox">
+            <div class="form-check">
+                <label class="form-check-label">
+                <input type="checkbox" class="form-check-input">
                     Sign up for newsletter
                 </label>
             </div>
-            <button type="submit">Submit</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
         </form>
 
         <br><br>
