@@ -85,24 +85,74 @@
       <div class="col-sm-8 m-auto">
 
         <!-- SIMPLE SLIDER -->
-        <div>
-          <div>
-            <div>
-              <img src="img/image1.jpg" alt="First Slide">
+        <div id="slider1" class="carousel slide mb-5" data-ride="carousel"> <!-- .carousel and .slide, plus data-ride="carousel". Also, give each slider its own id. -->
+          <div class="carousel-inner" role="listbox"> <!-- .carousel-inner goes inside .carousel and contains all the .carousel-item divs. -->
+            <div class="carousel-item active"> <!-- Each div that wraps around an image must be .carousel-item. Also, set the first one to .active.-->
+              <img src="img/image1.jpg" alt="First Slide" class="d-block img-fluid">
             </div>
-            <div>
-              <img src="img/image2.jpg" alt="Second Slide">
+            <div class="carousel-item">
+              <img src="img/image2.jpg" alt="Second Slide" class="d-block img-fluid">
             </div>
-            <div>
-              <img src="img/image3.jpg" alt="Third Slide">
+            <div class="carousel-item">
+              <img src="img/image3.jpg" alt="Third Slide" class="d-block img-fluid">
             </div>
           </div>
         </div>
 
         <!-- SLIDER WITH CONTROLS -->
-       
+        <div id="slider2" class="carousel slide mb-5" data-ride="carousel"> <!-- Note that this one has a different id than the first slider. -->
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <img src="img/image1.jpg" alt="First Slide" class="d-block img-fluid">
+            </div>
+            <div class="carousel-item">
+              <img src="img/image2.jpg" alt="Second Slide" class="d-block img-fluid">
+            </div>
+            <div class="carousel-item">
+              <img src="img/image3.jpg" alt="Third Slide" class="d-block img-fluid">
+            </div>
+          </div>
+          <!-- Controls go under the .carousel-inner div. -->
+          <!-- This is the "previous" arrow: -->
+          <a href="#slider2" class="carousel-control-prev" data-slide="prev"> <!-- href is set to the id for this entire carousel. -->
+            <span class="carousel-control-prev-icon"></span> <!-- This span and class will generate the "previous" icon. -->
+          </a>
+          <!-- And the "next" arrow: -->
+          <a href="#slider2" class="carousel-control-next" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+
         <!-- SLIDER WITH INDICATORS -->
-       
+        <div id="slider3" class="carousel slide mb-5" data-ride="carousel">
+          <!-- Indicators go right under the main .carousel div as an ordered list: -->
+          <ol class="carousel-indicators">
+            <li class="active" data-target="#slider3" data-slide-to="0"></li> <!-- set first indicator's class to .active. data-target is the id of this particular slider. data-slide-to is set to "0", which is the first. -->
+            <li data-target="#slider3" data-slide-to="1"></li> <!-- Change data-slide-to value and remove the .active class. -->
+            <li data-target="#slider3" data-slide-to="2"></li> <!-- Change data-slide-to value and remove the .active class. -->
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <img src="img/image1.jpg" alt="First Slide" class="d-block img-fluid">
+            </div>
+            <div class="carousel-item">
+              <img src="img/image2.jpg" alt="Second Slide" class="d-block img-fluid">
+            </div>
+            <div class="carousel-item">
+              <img src="img/image3.jpg" alt="Third Slide" class="d-block img-fluid">
+            </div>
+          </div>
+          <!-- Controls go under the .carousel-inner div. -->
+          <!-- This is the "previous" arrow: -->
+          <a href="#slider3" class="carousel-control-prev" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <!-- And the "next" arrow: -->
+          <a href="#slider3" class="carousel-control-next" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+
         <!-- SLIDER WITH CAPTIONS -->
     
       </div>
