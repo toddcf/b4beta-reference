@@ -82,11 +82,13 @@
     <!--########################START HERE#########################-->
 
     <!-- BUTTON WITH COLLAPSE -->
-    <button>Read More</button>
+    <button class="btn btn-primary d-block mb-4" data-toggle="collapse" data-target="#collapse-btn-1"> <!-- Add data-toggle="collapse" and a data-target. -->
+      Read More
+    </button>
 
-    <div>
-      <div>
-        <div>
+    <div class="collapse mb-5" id="collapse-btn-1"> <!-- Add .collapse, and match the id to whatever you set the data-target to in the button above. -->
+      <div class="card">
+        <div class="card-body">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eius libero quisquam nobis explicabo vel non necessitatibus ipsum doloribus cupiditate voluptate recusandae quo autem error debitis, sed, minima repellendus commodi.
         </div>
       </div>
