@@ -151,7 +151,7 @@
     <br><br>
 
     <!-- FLEX CONTAINER / FLEX COLUMN -->
-    <div class="row-hl d-flex flex-column"> <!-- Column is aligned to top/start. This is the default -- will not look any different. -->
+    <div class="row-hl d-flex flex-column"> <!-- Column is aligned to top/start. (.flex-column is vertical, while .flex-row would have been horizontal.) This is the default -- will not look any different. -->
       <div class="p-4 item-hl">Flex Item</div>
       <div class="p-4 item-hl">Flex Item</div>
       <div class="p-4 item-hl">Flex Item</div>
@@ -168,7 +168,7 @@
     <br><br>
 
     <!-- VERTICAL ALIGN ITEMS -->
-    <div class="row-hl">
+    <div class="row-hl d-flex flex-row align-items-start">
       <div class="p-4 item-hl">Flex Item</div>
       <div class="p-4 item-hl">Flex Item</div>
       <div class="p-4 item-hl">Flex Item</div>
@@ -177,7 +177,7 @@
     <br><br>
 
     <!-- VERTICAL ALIGN ITEMS -->
-    <div class="row-hl">
+    <div class="row-hl d-flex flex-row align-items-center">
       <div class="p-4 item-hl">Flex Item</div>
       <div class="p-4 item-hl">Flex Item</div>
       <div class="p-4 item-hl">Flex Item</div>
@@ -186,7 +186,7 @@
     <br><br>
 
     <!-- VERTICAL ALIGN ITEMS -->
-    <div class="row-hl">
+    <div class="row-hl d-flex flex-row align-items-end">
       <div class="p-4 item-hl">Flex Item</div>
       <div class="p-4 item-hl">Flex Item</div>
       <div class="p-4 item-hl">Flex Item</div>
@@ -195,7 +195,7 @@
     <br><br>
 
     <!-- VERTICAL ALIGN ITEMS -->
-    <div class="row-hl">
+    <div class="row-hl d-flex flex-row align-items-baseline"> <!-- Will be aligned to the top. -->
       <div class="p-4 item-hl">Flex Item</div>
       <div class="p-4 item-hl">Flex Item</div>
       <div class="p-4 item-hl">Flex Item</div>
@@ -204,7 +204,7 @@
     <br><br>
 
     <!-- VERTICAL ALIGN ITEMS -->
-    <div class="row-hl">
+    <div class="row-hl d-flex flex-row align-items-stretch"> <!-- Height = 100%. This is the default. -->
       <div class="p-4 item-hl">Flex Item</div>
       <div class="p-4 item-hl">Flex Item</div>
       <div class="p-4 item-hl">Flex Item</div>
@@ -222,24 +222,25 @@
     <br><br>
 
     <!-- ALIGN SELF -->
-    <div class="row-hl">
-      <div class="p-4 item-hl">Flex Item</div>
-      <div class="p-4 item-hl">Flex Item</div>
-      <div class="p-4 item-hl">Flex Item</div>
-      <div class="p-4 item-hl">Flex Item</div>
-      <div class="p-4 item-hl">Flex Item</div>
+    <div class="row-hl d-flex flex-row">
+      <div class="p-4 item-hl align-self-start">Flex Item</div>
+      <div class="p-4 item-hl align-self-center">Flex Item</div>
+      <div class="p-4 item-hl align-self-end">Flex Item</div>
+      <div class="p-4 item-hl align-self-baseline">Flex Item</div>
+      <div class="p-4 item-hl align-self-stretch">Flex Item</div>
     </div>
 
     <br><br>
 
     <!-- RESPONSIVE ALIGN SELF -->
-    <div class="row-hl">
-      <div class="p-4 item-hl">Flex Item</div>
-      <div class="p-4 item-hl">Flex Item</div>
-      <div class="p-4 item-hl">Flex Item</div>
-      <div class="p-4 item-hl">Flex Item</div>
-      <div class="p-4 item-hl">Flex Item</div>
+    <div class="row-hl d-flex flex-row">
+      <div class="p-4 item-hl align-self-md-start">Flex Item</div> <!-- Just doing md for example. Can use whatever size necessary. -->
+      <div class="p-4 item-hl align-self-md-center">Flex Item</div>
+      <div class="p-4 item-hl align-self-md-end">Flex Item</div>
+      <div class="p-4 item-hl align-self-md-baseline">Flex Item</div>
+      <div class="p-4 item-hl align-self-md-stretch">Flex Item</div>
     </div>
+
   </div>
 
   <div style="margin-top:500px;"></div>

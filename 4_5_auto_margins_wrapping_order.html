@@ -92,26 +92,26 @@
     <!--########################START HERE#########################-->
 
     <!-- MR-AUTO -->
-    <div class="row-hl">
-        <div class="p-2 item-hl">Flex item</div>
-        <div class="p-2 item-hl">Flex item</div>
-        <div class="p-2 item-hl">Flex item</div>
+    <div class="row-hl d-flex"> <!-- .row-hl is a custom class for this course, not a Bootstrap 4 class. -->
+        <div class="p-2 item-hl mr-auto">Flex item</div> <!-- .item-hl is a custom class for this course, not a Bootstrap 4 class. Also mr-auto will knock the other two divs over to the right. -->
+        <div class="p-2 item-hl">Flex item</div> <!-- .item-hl is a custom class for this course, not a Bootstrap 4 class. -->
+        <div class="p-2 item-hl">Flex item</div> <!-- .item-hl is a custom class for this course, not a Bootstrap 4 class. -->
     </div>
 
     <br><br>
 
     <!-- ML-AUTO -->
-    <div class="row-hl">
+    <div class="row-hl d-flex">
         <div class="p-2 item-hl">Flex item</div>
         <div class="p-2 item-hl">Flex item</div>
-        <div class="p-2 item-hl">Flex item</div>
+        <div class="p-2 item-hl ml-auto">Flex item</div> <!-- ml-auto will knock the other two divs over to the left. -->
     </div>
 
     <br><br>
 
     <!-- MB-AUTO -->
-    <div class="row-hl">
-        <div class="p-2 item-hl">Flex item</div>
+    <div class="row-hl d-flex flex-column"> <!-- .flex-column means we are manipulating the vertical. -->
+        <div class="p-2 item-hl mb-auto">Flex item</div> <!-- .mb-auto pushes the other divs down. -->
         <div class="p-2 item-hl">Flex item</div>
         <div class="p-2 item-hl">Flex item</div>
     </div>
@@ -119,10 +119,10 @@
     <br><br>
 
     <!-- MT-AUTO -->
-    <div class="row-hl">
+    <div class="row-hl d-flex flex-column">
         <div class="p-2 item-hl">Flex item</div>
         <div class="p-2 item-hl">Flex item</div>
-        <div class="p-2 item-hl">Flex item</div>
+        <div class="p-2 item-hl mt-auto">Flex item</div> <!-- .mt-auto pushes the other two divs up. -->
     </div>
 
     <br><br>
