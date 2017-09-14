@@ -91,22 +91,22 @@
     <br><br>
 
     <!-- TOOLTIPS WITH HTML -->
-    <button class="btn btn-primary" data-toggle="tooltip" data-placement="top" data-html="true" title="<h3>Hello, World</h3><p>Lorem ipsum dolor sit amet.</p>"> <!-- You can put HTML inside the title. BUT you must add data-html="true" -->
+    <button id="hello" class="btn btn-primary" data-toggle="tooltip" data-placement="top" data-html="true" title="<h3>Hello, World</h3><p>Lorem ipsum dolor sit amet.</p>"> <!-- You can put HTML inside the title. BUT you must add data-html="true". Also added id="hello", which will be used in jQuery at end of this page. -->
       Tooltip with HTML
     </button>
 
     <hr>
 
     <!-- TRIGGER WITH JS -->
-    <button>
+    <button class="btn btn-secondary" onclick="showTooltip()"> <!-- Use onclick attribute to call a function called showTooltip when clicked. THAT FUNCTION WILL BE CREATED IN THE SCRIPT TAG AT THE BOTTOM OF THIS PAGE. -->
       Show Tooltip
     </button>
 
-    <button>
+    <button class="btn btn-secondary" onclick="hideTooltip()"> <!-- Or call hideTooltip function. -->
       Hide Tooltip
     </button>
 
-    <button>
+    <button class="btn btn-secondary" onclick="toggleTooltip()"> <!-- Or call toggleTooltip function. -->
       Toggle Tooltip
     </button>
 
@@ -121,6 +121,24 @@
     
     // Initialize tooltips:
     $( "[data-toggle='tooltip']" ).tooltip();
+
+    function showTooltip() {
+
+      $( "#hello" ).tooltip( "show" ); /* Grabs the button with the hello id and shows its tooltip -- when a different button is clicked! */
+
+    }
+
+    function hideTooltip() {
+
+      $( "#hello" ).tooltip( "hide" );
+
+    }
+
+    function toggleTooltip() {
+
+      $( "#hello" ).tooltip( "toggle" );
+
+    }
 
   </script>
 </body>
