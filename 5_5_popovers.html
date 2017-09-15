@@ -192,6 +192,31 @@
 
     }
 
+    // Popover Events
+    $( "#myPopover" ).on( "show.bs.popover", function() {
+
+      console.log( "Popover Show" );
+
+    } );
+
+    $( "#myPopover" ).on( "shown.bs.popover", function() {
+
+      console.log( "Popover Shown" );
+      
+    } );
+
+    $( "#myPopover" ).on( "hide.bs.popover", function() {
+
+      console.log( "Popover Hide" );
+      
+    } );
+
+    $( "#myPopover" ).on( "hidden.bs.popover", function() {
+
+      console.log( "Popover Hidden" );
+      
+    } );
+
   </script>
 </body>
 </html>
