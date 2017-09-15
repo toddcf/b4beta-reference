@@ -125,16 +125,42 @@
     <br><br>
 
     <!-- DISMISSIBLE POPOVER -->
-    <button>
-      Toggle popover
+    <!-- Adding data-trigger="focus" will dismiss the popover if you click anywhere else on the page. -->
+    <!-- You can also fire popovers using JavaScript, which is why we gave this one an id. -->
+    <button
+      id="myPopover"
+      class ="btn btn-info"
+      data-toggle="popover"
+      data-placement="left"
+      title="Popover Title"
+      data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+      data-trigger="focus"
+    >
+      Dismissible popover
     </button>
 
     <hr>
 
     <!-- CONTROL WITH JS -->
-    <button>Show Popover</button>
-    <button>Hide Popover</button>
-    <button>Toggle Popover</button>
+    <button
+      class="btn btn-secondary"
+      onclick="showPopover()"
+    >
+      Show Popover
+    </button>
+    <button
+      class="btn btn-secondary"
+      onclick="hidePopover()"
+    >
+      Hide Popover
+    </button>
+    <button
+      class="btn btn-secondary"
+      onclick="togglePopover()"
+    >
+      Toggle Popover
+    </button>
+  
   </div>
 
   <div style="margin-top:500px;"></div>
@@ -146,6 +172,25 @@
     
     // Initialize Popovers
     $( "[data-toggle='popover']" ).popover();
+
+    // Trigger with JavaScript:
+    function showPopover() {
+
+      $( "#myPopover" ).popover( "show" );
+
+    }
+
+    function hidePopover() {
+
+      $( "#myPopover" ).popover( "hide" );
+
+    }
+
+    function togglePopover() {
+
+      $( "#myPopover" ).popover( "toggle" );
+
+    }
 
   </script>
 </body>
