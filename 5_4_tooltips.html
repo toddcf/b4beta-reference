@@ -122,6 +122,7 @@
     // Initialize tooltips:
     $( "[data-toggle='tooltip']" ).tooltip();
 
+    // onclick functions for buttons above:
     function showTooltip() {
 
       $( "#hello" ).tooltip( "show" ); /* Grabs the button with the hello id and shows its tooltip -- when a different button is clicked! */
@@ -139,6 +140,28 @@
       $( "#hello" ).tooltip( "toggle" );
 
     }
+
+    // Tooltip Events:
+
+    // Console log every time a particular Tooltip fires:
+    $( "#hello" ).on( "show.bs.tooltip", function() {
+      console.log( "Tooltip Show" );
+    } );
+
+    // Fires AFTER a particular Tooltip is finished showing:
+    $( "#hello" ).on( "shown.bs.tooltip", function() {
+      console.log( "Tooltip Shown" );
+    } );
+
+    // Fires when a particular Tooltip is hidden.
+    $( "#hello" ).on( "hide.bs.tooltip", function() {
+      console.log( "Tooltip Hide" );
+    } );
+
+    // Fires AFTER a particular Tooltip is hidden.
+    $( "#hello" ).on( "hidden.bs.tooltip", function() {
+      console.log( "Tooltip Hidden" );
+    } );
 
   </script>
 </body>
